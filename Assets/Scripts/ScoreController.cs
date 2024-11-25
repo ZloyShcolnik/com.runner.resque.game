@@ -3,11 +3,12 @@ using UnityEngine;
 
 public class ScoreController : MonoBehaviour
 {
-    private float score;
+    public static float score;
     private Text scoreText;
 
     private void Awake()
     {
+        score = 0;
         scoreText = GetComponent<Text>();
     }
 
